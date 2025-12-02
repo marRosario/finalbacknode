@@ -8,7 +8,7 @@ const app=express()
 const PORT =process.env.PORT || 3000;// busca el puerto declarado en el archivo .env y si no lo encuentra usa el 3000
 
 const corsConfig={ //configuracion de cors 
-origin:["http://localhost:3000","http://127.0.0.1:5500"], //dominio permitido
+origin:["http://localhost:3000","http://127.0.0.1:5500", "https://finalbacknode-kd5g.vercel.app"], //dominio permitido
 methods:["GET","POST", "PUT", "DELETE"], //metodos permitidos
 allowedHeaders:["Content-Type", "Authorization"],//cabeceras permitidas
 exposedHeaders:["Content-Length"],//cabeceras visibles al cliente
