@@ -7,7 +7,7 @@ const routes=express.Router();
 
 routes.get("/products", getAllProducts)
 routes.get("/products/:id", getProductById)
-routes.post("/products", authentication,createProduct)
+routes.post("/products", createProduct)
 
 routes.delete("/products/:id",authentication, deleteProduct)
 
